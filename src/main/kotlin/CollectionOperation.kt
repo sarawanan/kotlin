@@ -37,4 +37,8 @@ fun main() {
     println(list.lastOrNull { it == 3 })
 
     println(list.count())
+
+    val (positives, negatives) = list.partition { it > 0 }
+    println(positives)
+    println(negatives)
 }

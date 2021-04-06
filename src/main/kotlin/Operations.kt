@@ -16,5 +16,15 @@ fun main() {
 
     val grpPhone = pList.groupBy(P::phone, P::name)
     println(grpPhone)
+
+    println(map)
+    println(flatMap)
 }
+
+val colors = listOf("Red", "Blue", "Orange", "Green")
+val products = listOf("Slipper", "Bag", "Cloth")
+val cart = listOf(colors, products)
+val map = cart.map { it }
+val flatMap = cart.flatten()
+
 
