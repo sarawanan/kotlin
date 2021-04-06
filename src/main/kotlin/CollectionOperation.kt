@@ -41,4 +41,7 @@ fun main() {
     val (positives, negatives) = list.partition { it > 0 }
     println(positives)
     println(negatives)
+
+    println(list.minOrNull())
+    println(list.maxOrNull())
 }
