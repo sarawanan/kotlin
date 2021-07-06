@@ -12,12 +12,11 @@ fun cases(obj: Any) {
 }
 
 fun whenAssign(obj: Any): Any {
-    val result = when (obj) {
+    return when (obj) {
         1 -> "One"
         is Int -> "Obj is Int"
         else -> "Unknown"
     }
-    return result
 }
 
 fun main() {
