@@ -1,6 +1,13 @@
+sealed interface ReadResult
+data class Number(val number: Int) : ReadResult
+data class Text(val text: String) : ReadResult
+data object EndOfFile : ReadResult
 data class User(val name: String, val id: Int)
 
 fun main() {
+    println(Number(7)) // Number(number=7)
+    println(EndOfFile) // EndOfFile
+
     val user1 = User("Hello", 1)
     val user2 = User("Hello", 1)
     val user3 = User("Kotlin", 2)
